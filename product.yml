@@ -1,5 +1,4 @@
 spring:
-  application.name: product
   datasource:
     url: jdbc:mysql://mysql:3306/ms_product
     username: root
@@ -18,15 +17,12 @@ springdoc:
   api-docs.path: /openapi/v3/api-docs
   packagesToScan: com.example.product
   pathsToMatch: /**
+
 api:
   responseCodes:
-    ok:
-      description: OK
-    badRequest:
-      description: Bad Request, invalid format of the request. See response message for more information
-    internalServer:
-      description: Internal Server Error. See response message for more information
-
+    ok.description: "OK"
+    badRequest.description: "Solicitud incorrecta, formato inválido de la solicitud. Consulte el mensaje de respuesta para más información."
+    internalServer.description: "Error interno del servidor. Consulte el mensaje de respuesta para más información."
 
 management:
   endpoints:
